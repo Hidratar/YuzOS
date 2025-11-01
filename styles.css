@@ -27,9 +27,9 @@ body::before {
 .navbar {
     position: fixed;
     top: 0;
-    left: -30px;
+    left: -20px;
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
