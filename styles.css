@@ -27,7 +27,7 @@ body::before {
 .navbar {
     position: fixed;
     top: 0;
-    left: -60px;
+    left: -30px;
     width: 100%;
     padding: 1rem 1rem;
     display: flex;
