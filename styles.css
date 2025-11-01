@@ -5,7 +5,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     background-color: #000000;
-    background-image: url('images/fundo.jpg');
+    background-image: url('https://github.com/Hidratar/YuzOS/blob/main/images/fundo.jpg?raw=true');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
