@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuz OS – Nova Experiência na Nova Guia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Yuz OS</div>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#documentacao">Documentação</a></li>
+        </ul>
+    </nav>
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transforme a Nova Guia em uma Central de Produtividade</h1>
+            <p>Yuz OS é uma extensão para o navegador que substitui a nova guia por um painel poderoso, inteligente e altamente personalizável. Gerencie tarefas, acompanhe notícias de segurança e mantenha acessos rápidos sempre ao alcance.</p>
+            <a href="#recursos" class="btn primary-btn">Saiba mais</a>
+        </div>
+    </header>
+    <section id="recursos" class="section recursos">
+        <h2 class="section-title">Recursos principais</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="bi bi-grid-3x3-gap"></i>
+                <h4>Painéis dinâmicos</h4>
+                <p>Organize widgets de notícias, lista de tarefas, atalhos e notas em um layout flexível. Arraste, redimensione e centralize como preferir.</p>
+            </div>
+            <div class="feature-card">
+                <i class="bi bi-brush"></i>
+                <h4>Personalização visual</h4>
+                <p>Escolha temas claros ou escuros, selecione planos de fundo e defina cores e fontes. O motor de temas ajusta automaticamente a legibilidade.</p>
+            </div>
+            <div class="feature-card">
+                <i class="bi bi-journal-check"></i>
+                <h4>Lista de tarefas integrada</h4>
+                <p>Adicione tarefas rapidamente e acompanhe seu progresso. As listas ficam sempre sincronizadas com o resto do painel.</p>
+            </div>
+            <div class="feature-card">
+                <i class="bi bi-collection"></i>
+                <h4>Atalhos rápidos</h4>
+                <p>Acesse ferramentas como Nmap, Wireshark e Metasploit, ou adicione seus próprios aplicativos ao menu lateral com um clique.</p>
+            </div>
+            <div class="feature-card">
+                <i class="bi bi-sliders2"></i>
+                <h4>Controle total</h4>
+                <p>Edite widgets existentes, crie novos a partir de URLs, scripts ou texto, e exclua elementos que não precisa. Tudo sem complicações.</p>
+            </div>
+        </div>
+    </section>
+    <section id="galeria" class="section galeria">
+        <h2 class="section-title">Galeria</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="tilt">
+                    <img src="images/adicionando_app.png" alt="Adicionando aplicativo ao menu lateral">
+                </div>
+                <h5>Adicionar Aplicativo</h5>
+                <p>Crie atalhos personalizados com nome e URL para o menu lateral.</p>
+            </div>
+            <div class="gallery-item">
+                <div class="tilt">
+                    <img src="images/configuracoes.png" alt="Painel de configurações">
+                </div>
+                <h5>Painel de Configurações</h5>
+                <p>Personalize saudações, temas, fontes e fundos diretamente na nova guia.</p>
+            </div>
+            <div class="gallery-item">
+                <div class="tilt">
+                    <img src="images/painel_lateral.png" alt="Painel lateral direito">
+                </div>
+                <h5>Painel Central</h5>
+                <p>Acesse favoritos, histórico recente e sites mais visitados num único local.</p>
+            </div>
+            <div class="gallery-item">
+                <div class="tilt">
+                    <img src="images/mudanca_titulo.png" alt="Mudança de título">
+                </div>
+                <h5>Alterar Título</h5>
+                <p>Edite o título da página sem sair da nova guia e torne-a única.</p>
+            </div>
+        </div>
+    </section>
+    <section id="documentacao" class="section documentacao">
+        <h2 class="section-title">Documentação</h2>
+        <div class="doc-content">
+            <h3>Instalação e uso</h3>
+            <p>Para instalar Yuz OS, basta adicionar a extensão ao seu navegador via Chrome Web Store. Após a instalação, abra uma nova guia e aproveite o painel totalmente renovado. Os dados são armazenados localmente, garantindo privacidade e desempenho.</p>
+            <h3>Widgets e ferramentas</h3>
+            <p>Cada widget pode ser movido, redimensionado e centralizado. Pressione <kbd>Tab</kbd> enquanto arrasta para alinhar perfeitamente com outros elementos. Os botões no canto de cada widget permitem expandir, reduzir ou remover conforme sua necessidade.</p>
+            <h3>Personalização avançada</h3>
+            <p>O menu de configurações oferece controles precisos sobre temas, cores e fontes. Ao escolher "Criar/Editar Tema", você pode definir cores primárias e secundárias que combinam com seu estilo. O motor de temas detecta o brilho do plano de fundo para ajustar automaticamente o contraste e melhorar a legibilidade.</p>
+            <pre><code>function saveConfig(config) {
+  localStorage.setItem('yuzOcsConfig', JSON.stringify(config));
+  applyConfig(config);
+}</code></pre>
+            <p>Acima está um exemplo simples de como as configurações são salvas no armazenamento local e aplicadas imediatamente. A extensão trabalha de forma transparente para que você foque no que importa.</p>
+            <h3>Desenvolvedores</h3>
+            <p>Yuz OS possui suporte a widgets personalizados. É possível integrar APIs ou exibir dados remotos com JavaScript padrão e <code>fetch</code> utilizando o arquivo <em>autowidgetconget.js</em>. Os widgets podem exibir texto simples, conteúdo de uma URL ou executar código customizado.</p>
+        </div>
+    </section>
+    <footer id="contato" class="footer">
+        <div class="footer-content">
+            <h2>Comece agora</h2>
+            <p>Yuz OS está pronto para transformar a forma como você usa a nova guia. Experimente, personalize e descubra uma experiência mais eficiente.</p>
+            <a href="https://github.com/Hidratar/YuzOS/releases/tag/Versions" class="btn secondary-btn">Baixar Extensão.</a>
+        </div>
+        <div class="credits">
+            <p>© 2025 Yuz OS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
